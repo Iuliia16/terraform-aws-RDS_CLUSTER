@@ -2,8 +2,8 @@
 ## Please add below code 
 
 ```
-module "aws_rds_cluster" {
-     source = "Iuliia16/rds-cluster/aws"
+module "rds_cluster" {
+     source = "iuliia16/rds-cluster/aws"
 region                  = "us-east-2"
 cluster_identifier      = "aurora_cluster_demo"
 engine                  = "aurora-mysql"
