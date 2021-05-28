@@ -3,7 +3,7 @@
 
 ```
 module "aws_rds_cluster" {
-     source = "../"
+     source = "Iuliia16/terraform-aws-RDS_CLUSTER"
 region                  = "us-east-2"
 cluster_identifier      = "aurora_cluster_demo"
 engine                  = "aurora-mysql"
@@ -17,13 +17,25 @@ preferred_backup_window = "07:00-09:00"
 skip_final_snapshot     = true
 
 subnet_ids = [
-  "subnet-0e3bd7b9dd92a4898",
-  "subnet-0fde922f006f0dc1e",
-  "subnet-0ec106794858746b4"
+  "subnet-",
+  "subnet-",
+  "subnet-"
 ]
 allowed_hosts = [
-  "50.194.68.230/32",
+  "50.194.68.1/32",
   "127.0.0.1/32"
 ]
+output "region" {
+  value = var.region
+}
+output "subnet_list" {
+  value = var.subnet_ids
+}
+output "allowed_hosts" {
+  value = var.allowed_hosts
+}
+output "DB_NAME" {
+  value = aws_rds_cluster.default.cluster_identifier
+}
 }
 ```
