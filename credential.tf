@@ -1,7 +1,7 @@
 resource "random_password" "password" {
-  length           = 30
-  special          = true
-  
+  length  = 30
+  special = true
+
 }
 
 resource "aws_ssm_parameter" "foo" {
