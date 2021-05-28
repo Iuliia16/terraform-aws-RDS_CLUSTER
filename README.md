@@ -2,7 +2,7 @@
 ## Please add below code 
 
 ```
-module "rds_cluster" {
+module "terraform-aws-RDS_CLUSTER" {
      source = "iuliia16/rds-cluster/aws"
 region                  = "us-east-2"
 cluster_identifier      = "aurora_cluster_demo"
