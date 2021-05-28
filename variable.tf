@@ -9,6 +9,7 @@ variable "engine_version" {}
 variable "availability_zones" {}
 variable "database_name" {}
 variable "master_username" {}
+variable "master_password" {}
 variable "publicly_accessible" {}
 variable "backup_retention_period" {}
 variable "preferred_backup_window" {}
