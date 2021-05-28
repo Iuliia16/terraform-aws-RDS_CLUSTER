@@ -1,8 +1,8 @@
-resource "random_password" "password" {
-  length  = 30
-  special = true
+# resource "random_password" "password" {
+#   length  = 30
+#   special = true
 
-}
+# }
 
 resource "aws_ssm_parameter" "foo" {
   name  = var.cluster_identifier
