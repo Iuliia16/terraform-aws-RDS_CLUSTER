@@ -3,7 +3,7 @@
 
 ```
 module "aws_rds_cluster" {
-     source = "Iuliia16/terraform-aws-RDS_CLUSTER"
+     source = "Iuliia16/rds-cluster/aws"
 region                  = "us-east-2"
 cluster_identifier      = "aurora_cluster_demo"
 engine                  = "aurora-mysql"
